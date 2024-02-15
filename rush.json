@@ -21,8 +21,8 @@
 
   "projects": [
      {
-        "packageName": "signify",
-        "projectFolder": "services/signify",
+        "packageName": "hooma-signifier-service",
+        "projectFolder": "services/signifier",
         "versionPolicyName": ""
      }
   ]

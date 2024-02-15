@@ -1,0 +1,8 @@
+{
+  "name": "hooma-signifier-service",
+  "version": "0.0.0",
+  "author": "Hooma",
+  "dependencies": {
+    "typescript": "~5.3.3"
+  }
+}
