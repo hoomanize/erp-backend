@@ -25,7 +25,4 @@ jobs:
             exit 1
           else
             echo "PR has 1 or fewer commits."
-
-  conventional-commit:
-    runs-on: ubuntu-latest
-    timeout-minutes: 1
+          fi
