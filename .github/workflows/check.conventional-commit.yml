@@ -1,8 +1,8 @@
-name: "check: commits"
+name: check_commits
 
 on:
   pull_request:
-    types: [opened, edited, reopened, synchronize]
+    branches: [ "main" ]
 
 jobs:
   count-commit:

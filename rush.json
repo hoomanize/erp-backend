@@ -24,6 +24,11 @@
         "packageName": "hooma-signifier-service",
         "projectFolder": "services/signifier",
         "versionPolicyName": ""
-     }
+     },
+    {
+      "packageName": "hooma-authentifier-service",
+      "projectFolder": "services/authentifier",
+      "versionPolicyName": ""
+    }
   ]
 }
