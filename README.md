@@ -21,4 +21,4 @@ npm install -g @microsoft/rush
 ## Commits
 We are using Git hooks. Make sure your commits respects those rules:
 
-- conventional commit semantic 
+- conventional 
