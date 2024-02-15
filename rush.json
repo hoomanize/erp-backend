@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+
+  "rushVersion": "5.113.4",
+
+  "pnpmVersion": "7.33.5",
+
+  "nodeSupportedVersionRange": "20.9.0",
+
+  "gitPolicy": {
+    "versionBumpCommitMessage": "Bump versions [skip ci]",
+    "changeLogUpdateCommitMessage": "Update changelogs [skip ci]",
+    "changefilesCommitMessage": "Rush change"
+  },
+
+  "repository": {
+    "url": "https://github.com/hoomanize/hooma-erp-backend",
+    "defaultBranch": "main",
+    "defaultRemote": "origin"
+  },
+
+  "projects": [
+     {
+        "packageName": "signify",
+        "projectFolder": "services/signify",
+        "versionPolicyName": ""
+     }
+  ]
+}
