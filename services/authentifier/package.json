@@ -1,5 +1,22 @@
 {
   "name": "hooma-authentifier-service",
+  "description": "API Gateway and Authentication service",
   "version": "0.0.0",
-  "author": "Hooma"
+  "author": "Hooma",
+  "scripts": {
+    "-- DEV --": "----------",
+    "dev:run": "npx ts-node-dev --respawn entrypoint.ts"
+  },
+  "dependencies": {
+    "express": "~4.18.2",
+    "morgan": "~1.10.0",
+    "http-proxy-middleware": "~2.0.6",
+    "express-rate-limit": "~7.1.5"
+  },
+  "devDependencies": {
+    "typescript": "~5.3.3",
+    "ts-node-dev": "~2.0.0",
+    "@types/node": "~20.11.19",
+    "@types/express": "~4.17.21"
+  }
 }
