@@ -5,13 +5,17 @@
   "author": "Hooma",
   "scripts": {
     "-- DEV --": "----------",
-    "dev:run": "npx ts-node-dev --respawn entrypoint.ts"
+    "dev:run": "npx tsnd --respawn entrypoint.ts",
+    "-- FORMAT & LINT --": "----------",
+    "format:check": "",
+    "format:fix": "npx prettier . --config ../../.prettierrc.json --write"
   },
   "dependencies": {
     "express": "~4.18.2",
     "morgan": "~1.10.0",
     "http-proxy-middleware": "~2.0.6",
-    "express-rate-limit": "~7.1.5"
+    "express-rate-limit": "~7.1.5",
+    "prettier": "~3.2.5"
   },
   "devDependencies": {
     "typescript": "~5.3.3",
