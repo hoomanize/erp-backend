@@ -1,5 +1,5 @@
 #!/bin/sh
-if ! head -1 "$1" | grep -qE "^(feat|fix|chore|docs|test|style|refactor|perf|build|ci|revert)\((global|signifier|authentifier)\): .{1,}$"; then
+if ! head -1 "$1" | grep -qE "^(feat|fix|chore|docs|test|style|refactor|perf|build|ci|revert)\((global|signifier|authentifier|userifier)\): .{1,}$"; then
     echo "aborted: Your commit message doesn't respect conventional commit syntax" >&2
     exit 1
 fi
