@@ -1,33 +1,32 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
-
   "rushVersion": "5.113.4",
-
   "pnpmVersion": "7.33.5",
-
   "nodeSupportedVersionRange": "20.9.0",
-
   "gitPolicy": {
     "versionBumpCommitMessage": "Bump versions [skip ci]",
     "changeLogUpdateCommitMessage": "Update changelogs [skip ci]",
     "changefilesCommitMessage": "Rush change"
   },
-
   "repository": {
     "url": "https://github.com/hoomanize/hooma-erp-backend",
     "defaultBranch": "main",
     "defaultRemote": "origin"
   },
-
   "projects": [
-     {
-        "packageName": "hooma-signifier-service",
-        "projectFolder": "services/signifier",
-        "versionPolicyName": ""
-     },
     {
       "packageName": "hooma-authentifier-service",
       "projectFolder": "services/authentifier",
+      "versionPolicyName": ""
+    },
+    {
+      "packageName": "hooma-signifier-service",
+      "projectFolder": "services/signifier",
+      "versionPolicyName": ""
+    },
+    {
+      "packageName": "hooma-userifier-service",
+      "projectFolder": "services/userifier",
       "versionPolicyName": ""
     }
   ]
