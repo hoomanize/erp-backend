@@ -3,6 +3,7 @@ import Http2 from 'http2';
 import fs from 'fs';
 
 import { addResponseLoggerMiddleware } from './middlewares/response-logging.middleware';
+import { addGetRoutes } from './routes/routes';
 
 const PORT = 3001;
 const HOST = 'localhost';
@@ -16,6 +17,10 @@ const addMiddlewares = async (server: Server) => {
   await addResponseLoggerMiddleware(server);
 };
 
+const addRoutes = (server: Server) => {
+  addGetRoutes(server);
+};
+
 export const initServer = async () => {
   const server = new Hapi.Server({
     // @ts-ignore
@@ -26,6 +31,7 @@ export const initServer = async () => {
   });
 
   await addMiddlewares(server);
+  addRoutes(server);
 
   return server;
 };
