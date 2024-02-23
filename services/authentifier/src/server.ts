@@ -3,6 +3,7 @@ import Http2 from 'http2';
 import fs from 'fs';
 
 import { addResponseLoggerMiddleware } from './middlewares/response-logging.middleware';
+import { addProxyMiddleware } from './middlewares/proxy.middleware';
 
 const PORT = 3000;
 const HOST = 'localhost';
@@ -14,6 +15,7 @@ const serversOptions = {
 
 const addMiddlewares = async (server: Server) => {
   await addResponseLoggerMiddleware(server);
+  await addProxyMiddleware(server);
 };
 
 export const initServer = async () => {
@@ -26,6 +28,16 @@ export const initServer = async () => {
   });
 
   await addMiddlewares(server);
+
+  server.route({
+    method: 'GET',
+    path: '/user',
+    handler: {
+      proxy: {
+        mapUri: (req) => ({ uri: 'https://127.0.0.1:3001/user' }),
+      },
+    },
+  });
 
   return server;
 };
