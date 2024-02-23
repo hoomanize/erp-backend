@@ -1,7 +1,7 @@
 {
   "name": "hooma-authentifier-service",
   "description": "API Gateway and Authentication service",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Hooma",
   "scripts": {
     "-- DEV --": "----------",
@@ -11,12 +11,10 @@
     "format:fix": "npx prettier . --config ../../.prettierrc.json --write"
   },
   "dependencies": {
-    
-    
-    
-    "prettier": "~3.2.5",
+    "laabr": "~6.1.3",
     "@hapi/hapi": "~21.3.3",
-    "laabr": "~6.1.3"
+    "@hapi/h2o2": "~10.0.4",
+    "prettier": "~3.2.5"
   },
   "devDependencies": {
     "typescript": "~5.3.3",

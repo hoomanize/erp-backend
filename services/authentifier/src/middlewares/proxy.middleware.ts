@@ -1,7 +1,7 @@
-import { createProxyMiddleware } from 'http-proxy-middleware'
+import h2o2 from '@hapi/h2o2';
 
-export const addProxyMiddleware = (app, routes) => {
-  routes.forEach((route) => {
-    app.use(route.url, createProxyMiddleware(route.proxy))
-  })
-}
+import type { Server } from '@hapi/hapi';
+
+export const addProxyMiddleware = async (server: Server) => {
+  await server.register(h2o2);
+};
