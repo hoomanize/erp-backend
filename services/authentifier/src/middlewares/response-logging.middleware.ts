@@ -32,6 +32,8 @@ const createPreset = () => {
 const setFormat = () => {
   laabr.format('onPostStart', '[\x1b[36mINFO\x1b[0m] logging middleware initialized');
   laabr.format('response', 'server.responses');
+  laabr.format('request-error', 'request error');
+  laabr.format('uncaught', 'uncaught');
 };
 
 export const setupResponseLogger = () => {

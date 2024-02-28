@@ -15,7 +15,7 @@
   },
   "projects": [
     {
-      "packageName": "hooma-authentifier-service",
+      "packageName": "@hooma/authentifier-service",
       "projectFolder": "services/authentifier",
       "versionPolicyName": ""
     },

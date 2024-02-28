@@ -24,8 +24,8 @@ importers:
     devDependencies:
       '@types/express': 4.17.21
       '@types/morgan': 1.9.9
-      '@types/node': 20.11.20
-      ts-node-dev: 2.0.0_aehgi7jjmmj3bt4higstlibq6i
+      '@types/node': 20.11.22
+      ts-node-dev: 2.0.0_qoj2cf2ute7s7ecoap4y23grw4
       typescript: 5.3.3
 
   ../../services/signifier:
@@ -45,8 +45,8 @@ importers:
     devDependencies:
       '@types/express': 4.17.21
       '@types/morgan': 1.9.9
-      '@types/node': 20.11.20
-      ts-node-dev: 2.0.0_aehgi7jjmmj3bt4higstlibq6i
+      '@types/node': 20.11.22
+      ts-node-dev: 2.0.0_qoj2cf2ute7s7ecoap4y23grw4
       typescript: 5.3.3
 
   ../../services/userifier:
@@ -66,8 +66,8 @@ importers:
     devDependencies:
       '@types/express': 4.17.21
       '@types/morgan': 1.9.9
-      '@types/node': 20.11.20
-      ts-node-dev: 2.0.0_aehgi7jjmmj3bt4higstlibq6i
+      '@types/node': 20.11.22
+      ts-node-dev: 2.0.0_qoj2cf2ute7s7ecoap4y23grw4
       typescript: 5.3.3
 
 packages:
@@ -378,20 +378,20 @@ packages:
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 20.11.20
+      '@types/node': 20.11.22
     dev: true
 
   /@types/connect/3.4.38:
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 20.11.22
     dev: true
 
   /@types/express-serve-static-core/4.17.43:
     resolution: {integrity: sha512-oaYtiBirUOPQGSWNGPWnzyAFJ0BP3cwvN4oWZQY+zUBwpVIGsKUkpBpSztp74drYcjavs7SKFZ4DX1V2QeN8rg==}
     dependencies:
-      '@types/node': 20.11.20
-      '@types/qs': 6.9.11
+      '@types/node': 20.11.22
+      '@types/qs': 6.9.12
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
     dev: true
@@ -401,7 +401,7 @@ packages:
     dependencies:
       '@types/body-parser': 1.19.5
       '@types/express-serve-static-core': 4.17.43
-      '@types/qs': 6.9.11
+      '@types/qs': 6.9.12
       '@types/serve-static': 1.15.5
     dev: true
 
@@ -420,17 +420,17 @@ packages:
   /@types/morgan/1.9.9:
     resolution: {integrity: sha512-iRYSDKVaC6FkGSpEVVIvrRGw0DfJMiQzIn3qr2G5B3C//AWkulhXgaBd7tS9/J79GWSYMTHGs7PfI5b3Y8m+RQ==}
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 20.11.22
     dev: true
 
-  /@types/node/20.11.20:
-    resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
+  /@types/node/20.11.22:
+    resolution: {integrity: sha512-/G+IxWxma6V3E+pqK1tSl2Fo1kl41pK1yeCyDsgkF9WlVAme4j5ISYM2zR11bgLFJGLN5sVK40T4RJNuiZbEjA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
 
-  /@types/qs/6.9.11:
-    resolution: {integrity: sha512-oGk0gmhnEJK4Yyk+oI7EfXsLayXatCWPHary1MtcmbAifkobT9cM9yutG/hZKIseOU0MqbIwQ/u2nn/Gb+ltuQ==}
+  /@types/qs/6.9.12:
+    resolution: {integrity: sha512-bZcOkJ6uWrL0Qb2NAWKa7TBU+mJHPzhx9jjLL1KHF+XpzEcR7EXHvjbHlGtR/IsP1vyPrehuS6XqkmaePy//mg==}
     dev: true
 
   /@types/range-parser/1.2.7:
@@ -441,7 +441,7 @@ packages:
     resolution: {integrity: sha512-x2EM6TJOybec7c52BX0ZspPodMsQUd5L6PRwOunVyVUhXiBSKf3AezDL8Dgvgt5o0UfKNfuA0eMLr2wLT4AiBA==}
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 20.11.20
+      '@types/node': 20.11.22
     dev: true
 
   /@types/serve-static/1.15.5:
@@ -449,7 +449,7 @@ packages:
     dependencies:
       '@types/http-errors': 2.0.4
       '@types/mime': 3.0.4
-      '@types/node': 20.11.20
+      '@types/node': 20.11.22
     dev: true
 
   /@types/strip-bom/3.0.0:
@@ -1046,7 +1046,7 @@ packages:
     hasBin: true
     dev: true
 
-  /ts-node-dev/2.0.0_aehgi7jjmmj3bt4higstlibq6i:
+  /ts-node-dev/2.0.0_qoj2cf2ute7s7ecoap4y23grw4:
     resolution: {integrity: sha512-ywMrhCfH6M75yftYvrvNarLEY+SUXtUvU8/0Z6llrHQVBx12GiFk5sStF8UdfE/yfzk9IAq7O5EEbTQsxlBI8w==}
     engines: {node: '>=0.8.0'}
     hasBin: true
@@ -1065,7 +1065,7 @@ packages:
       rimraf: 2.7.1
       source-map-support: 0.5.21
       tree-kill: 1.2.2
-      ts-node: 10.9.2_aehgi7jjmmj3bt4higstlibq6i
+      ts-node: 10.9.2_qoj2cf2ute7s7ecoap4y23grw4
       tsconfig: 7.0.0
       typescript: 5.3.3
     transitivePeerDependencies:
@@ -1074,7 +1074,7 @@ packages:
       - '@types/node'
     dev: true
 
-  /ts-node/10.9.2_aehgi7jjmmj3bt4higstlibq6i:
+  /ts-node/10.9.2_qoj2cf2ute7s7ecoap4y23grw4:
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
@@ -1093,7 +1093,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.11.20
+      '@types/node': 20.11.22
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
