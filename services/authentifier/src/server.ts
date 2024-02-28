@@ -5,12 +5,12 @@ import fs from 'fs';
 import { addResponseLoggerMiddleware } from './middlewares/response-logging.middleware';
 import { addProxyMiddleware } from './middlewares/proxy.middleware';
 
-const PORT = 3000;
-const HOST = 'localhost';
+const PORT = process.env.PORT;
+const HOST = process.env.HOST;
 
 const serversOptions = {
-  key: fs.readFileSync('../../common/ssl-certificates/self-cert.key'),
-  cert: fs.readFileSync('../../common/ssl-certificates/self-cert.crt'),
+  key: fs.readFileSync('ssl-certificates/hoomalocal.key'),
+  cert: fs.readFileSync('ssl-certificates/hoomalocal.crt'),
 };
 
 const addMiddlewares = async (server: Server) => {
@@ -27,16 +27,19 @@ export const initServer = async () => {
     tls: true,
   });
 
+  const test = '';
+
   await addMiddlewares(server);
 
   server.route({
     method: 'GET',
     path: '/user',
-    handler: {
-      proxy: {
-        mapUri: (req) => ({ uri: 'https://127.0.0.1:3001/user' }),
-      },
-    },
+    handler: () => 'user',
+    // handler: {
+    //   proxy: {
+    //     mapUri: (req) => ({ uri: 'https://127.0.0.1:3001/user' }),
+    //   },
+    // },
   });
 
   return server;
@@ -47,6 +50,7 @@ export const startServer = async (server: Server) => {
     await server.start();
   } catch (error) {
     console.log(`[\x1b[31mERROR\x1b[0m] server starts aboarted: ${HOST}:${PORT}`);
+    console.log(error);
     return;
   }
 
