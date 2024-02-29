@@ -43,6 +43,8 @@ We are using Git hooks. Make sure your commits respects those rules:
 
 - make you code agnostic
 - use adapters to link dependencies (DB, etc.)
+- the example service is authentifier
+  - Please refer to it before any structural decision
 
 ## Services
 
@@ -53,3 +55,26 @@ Use dedicated make command to sync config
 ```shell
 make sync_ts_config
 ```
+
+
+
+
+## Ports (for local)
+
+### Authentifier
+
+APACHE=443
+NODE=3000 (not mapped)
+DB=27017 (not mapped)
+
+### Signifier
+
+APACHE=3000
+NODE=3000 (not mapped)
+DB=27017 (not mapped)
+
+### Userifier
+
+APACHE=3001
+NODE=3000 (not mapped)
+DB=27017 (not mapped)

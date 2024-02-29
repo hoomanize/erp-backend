@@ -1,0 +1,36 @@
+version: '3.8'
+
+name: "userifier-service"
+
+services:
+  userifier_apache:
+    container_name: "userifier_apache"
+    build:
+      context: ../
+      dockerfile: docker/apache/Dockerfile
+    ports:
+      - "3001:3001"
+    env_file:
+      - ../.env.dev
+    networks:
+      userifier_net:
+        aliases:
+          - userifier_apache
+  userifier_application:
+    container_name: "userifier_application"
+    depends_on:
+      - userifier_apache
+    build:
+      context: ../
+      dockerfile: docker/application/Dockerfile
+    volumes:
+      - ${PWD}/src:/srv/userifier-service/src
+    env_file:
+      - ../.env.dev
+    networks:
+      userifier_net:
+        aliases:
+          - userifier_application
+
+networks:
+  userifier_net:
