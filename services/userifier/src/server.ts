@@ -5,12 +5,12 @@ import fs from 'fs';
 import { addResponseLoggerMiddleware } from './middlewares/response-logging.middleware';
 import { addGetRoutes } from './routes/routes';
 
-const PORT = 3001;
-const HOST = 'localhost';
+const HOST = process.env.NODE_HOST;
+const PORT = process.env.NODE_PORT;
 
 const serversOptions = {
-  key: fs.readFileSync('../../common/ssl-certificates/self-cert.key'),
-  cert: fs.readFileSync('../../common/ssl-certificates/self-cert.crt'),
+  key: fs.readFileSync('ssl-certificates/hoomalocal.key'),
+  cert: fs.readFileSync('ssl-certificates/hoomalocal.crt'),
 };
 
 const addMiddlewares = async (server: Server) => {
